@@ -1,0 +1,148 @@
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+:root {
+  --white: hsl(0, 0%, 100%);
+
+  --Stone100: hsl(30, 54%, 90%);
+  --Stone150: hsl(30, 18%, 87%);
+  --Stone600: hsl(30, 10%, 34%);
+  --Stone900: hsl(24, 5%, 18%);
+
+  --Brown800: hsl(14, 45%, 36%);
+
+  --Rose800: hsl(332, 51%, 32%);
+  --Rose50: hsl(330, 100%, 98%);
+
+  --sm: 1.6rem;
+  --md: 2rem;
+  --lg: 3rem;
+
+  --fuente: "Young Serif", serif;
+  --weight: 400;
+  --style: normal;
+}
+
+html {
+  font-size: 62.5%; /* 1rem = 16.5px*/
+  font-family: var(--fuente);
+  background-color: var(--Stone100);
+}
+
+.contenedor-principal {
+  width: 100%;
+
+  display: grid;
+  place-content: center;
+  justify-content: center;
+}
+
+.contenedor {
+  display: flex;
+  flex-direction: column;
+  max-width: 80rem;
+
+  background-color: var(--white);
+}
+
+.img {
+  width: 100%;
+  height: 15%;
+  margin: 0;
+}
+
+.titulo {
+  font-size: var(--lg);
+  font-weight: bold;
+  margin: 2rem;
+  color: var(--Stone900);
+}
+
+.parrafo {
+  font-size: var(--sm);
+  font-weight: 400;
+  color: var(--Stone600);
+  margin: auto 1rem;
+}
+
+.section {
+  background-color: var(--Rose50);
+  width: 95%;
+  height: 30%;
+  border-radius: 1.5rem;
+  margin: 1rem;
+  padding: 2rem;
+}
+
+.h4 {
+  color: var(--Rose800);
+  font-size: var(--sm);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.span {
+  font-weight: bold;
+  color: var(--Stone600);
+}
+
+.lista {
+  margin-left: 1.5rem;
+}
+
+.section2 {
+  margin: 1.5rem;
+  padding: 1rem;
+  border-bottom: 0.1rem solid var(--Stone150);
+}
+
+.h2 {
+  color: var(--Brown800);
+  font-size: var(--md);
+  font-weight: bold;
+  margin-bottom: 1rem;
+}
+
+.parrafo2 {
+  color: var(--Stone600);
+  font-size: var(--sm);
+  margin: 1.5rem;
+}
+
+.tabla {
+  display: grid;
+  grid-template-columns: repeat(2, 1fr);
+  justify-content: space-between;
+  margin: 0.5rem;
+}
+
+.parrafo-tabla {
+  grid-template-rows: repeat(4, 1fr);
+  border-bottom: 0.1rem solid var(--Stone150);
+  width: 100%;
+}
+
+.span-tabla {
+  font-weight: bold;
+  color: var(--Brown800);
+}
+
+@media (min-width: 375px) {
+  .img {
+    max-width: 90%;
+    margin: 2rem auto;
+    border-radius: 1rem;
+  }
+
+  .contenedor {
+    margin: 5rem auto;
+    border-radius: 1rem;
+  }
+
+  .parrafo-tabla {
+    padding: 1rem;
+  }
+}
